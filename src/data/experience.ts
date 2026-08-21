@@ -1,0 +1,8 @@
+import type { Experience } from "@/types";
+
+export const experiences: Experience[] = [
+  { role: "Aspirante a Oficial da Arma de Comunicações | Tecnologia, Redes e Sistemas de Comunicação", organization: "Exército Brasileiro", period: "jan/2023 – dez/2023", location: "São Paulo – SP", description: "Formação e atuação em telecomunicações, redes, infraestrutura tecnológica e segurança da informação. Desenvolvimento de servidor em nuvem para integração de computadores, além de liderança e tomada de decisão.", skills: ["Redes", "Cloud", "Telecomunicações", "Segurança da Informação", "Liderança"], visible: true },
+  { role: "Criador de Conteúdo Digital | Analytics, Dados e Estratégia Digital", organization: "Marca Pessoal | @sandrozdb", period: "jan/2024 – dez/2025", location: "São Paulo – Remoto", description: "Construção e gestão de uma marca digital com mais de 100 mil seguidores, usando dados de alcance, engajamento, retenção e comportamento da audiência para orientar conteúdo, posicionamento e crescimento orgânico.", skills: ["Analytics", "Comunicação", "Branding", "Dados", "Estratégia Digital"], visible: true },
+  { role: "Auxiliar de Manutenção | Infraestrutura Tecnológica, Redes e Sistemas Inteligentes", organization: "Sentran", period: "jan/2026 – ago/2026", location: "Embu das Artes – SP", description: "Atuação em sistemas inteligentes de monitoramento e fiscalização, com diagnóstico de falhas, manutenção, testes e suporte técnico em ambientes críticos.", skills: ["Redes TCP/IP", "Hardware", "Infraestrutura", "Troubleshooting", "Sistemas Inteligentes"], visible: true },
+  { role: "Estagiário de Consultoria", organization: "Elo", period: "", location: "", description: "", skills: [], visible: false },
+];
