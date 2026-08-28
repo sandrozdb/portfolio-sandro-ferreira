@@ -139,3 +139,7 @@ O projeto foi preparado para deploy contínuo na Vercel a partir da branch `main
 - Portfólio: [sandrozdb.com](https://sandrozdb.com)
 - LinkedIn: [linkedin.com/in/sandrozdb](https://www.linkedin.com/in/sandrozdb/)
 - GitHub: [github.com/sandrozdb](https://github.com/sandrozdb)
+
+## Licença
+
+Este projeto está licenciado sob a MIT License. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
