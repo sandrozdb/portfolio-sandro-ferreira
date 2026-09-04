@@ -16,6 +16,15 @@ Este portfólio foi desenvolvido como uma central da minha trajetória profissio
 
 > Transformo problemas reais em soluções com dados, inteligência artificial e automação.
 
+## Experiência atual
+
+**Elo — Estagiário de Consultoria | IA Aplicada, Agentes de IA e Dados**
+
+Atividades previstas no contrato:
+- Catalogar casos de uso de IA em projetos de consultoria.
+- Testar prompts e agentes para acelerar análises.
+- Aplicar IA em materiais e entregas reais do time.
+
 ## O que você encontra no portfólio
 
 - Sobre mim e posicionamento profissional
