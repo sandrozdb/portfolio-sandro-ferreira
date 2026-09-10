@@ -32,7 +32,7 @@ function SectionHeading({ eyebrow, title, description, className = "" }: { eyebr
 }
 
 function AssetImage({ src, alt, kind }: { src: string; alt: string; kind: "profile" | "project" }) {
-  if (src.startsWith("/api/")) {
+  if (src.startsWith("/api/") || src.startsWith("http://") || src.startsWith("https://")) {
     return <img src={src} alt={alt} className="asset-image" loading="lazy" decoding="async" />;
   }
   return <Image src={src} alt={alt} fill sizes={kind === "profile" ? "(max-width: 560px) calc(100vw - 44px), 400px" : "(max-width: 800px) calc(100vw - 28px), 560px"} quality={100} unoptimized className="asset-image" priority={kind === "profile"} />;
