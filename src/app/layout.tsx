@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
+import "./project-grid.css";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
 const siteUrl = "https://sandrozdb.com";
