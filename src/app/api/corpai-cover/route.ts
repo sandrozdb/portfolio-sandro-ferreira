@@ -11,13 +11,13 @@ const imageBase64 = part1 + part2 + part3 + part4 + part5 + part6a + part6b + pa
 const imageBytes = Buffer.from(imageBase64, "base64");
 
 export const runtime = "nodejs";
-export const dynamic = "force-static";
+export const dynamic = "force-dynamic";
 
 export async function GET() {
   return new Response(imageBytes, {
     headers: {
       "Content-Type": "image/webp",
-      "Cache-Control": "public, max-age=31536000, immutable",
+      "Cache-Control": "no-store, max-age=0",
     },
   });
 }
