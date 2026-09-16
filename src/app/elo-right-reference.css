@@ -1,0 +1,112 @@
+/* Ajuste fino do lado direito do hero para reproduzir a referência visual da Elo. */
+
+/* Remove o segundo arco criado no tema anterior para deixar somente um elemento lateral. */
+.profile-wrap::before {
+  display: none !important;
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 4;
+}
+
+/* Frase manuscrita entre a foto e o arco, sem qualquer sobreposição. */
+.hero-quote {
+  right: 118px !important;
+  top: 266px !important;
+  width: 150px;
+  z-index: 7 !important;
+  color: #18cdb8 !important;
+  font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive !important;
+  font-size: 24px !important;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.18 !important;
+  letter-spacing: -.035em;
+  text-align: left;
+  transform: rotate(-7deg) !important;
+  opacity: .9 !important;
+  text-shadow: 0 0 18px rgba(24, 205, 184, .08);
+}
+
+.hero-quote i {
+  display: block;
+  width: 88px !important;
+  height: 2px !important;
+  margin: 14px 0 0 9px !important;
+  background: var(--elo-yellow) !important;
+  border-radius: 99px;
+  transform: rotate(-10deg) !important;
+}
+
+/* Um único arco grande no extremo direito, parcialmente cortado pela viewport. */
+.hero-side-loop {
+  right: -145px !important;
+  top: 206px !important;
+  width: 218px !important;
+  height: 338px !important;
+  z-index: 1 !important;
+  border-width: 36px !important;
+  border-style: solid !important;
+  border-left-color: #19cdbc !important;
+  border-top-color: #527cf4 !important;
+  border-right-color: #9441ed !important;
+  border-bottom-color: #ef4740 !important;
+  border-radius: 112px !important;
+  background: transparent !important;
+  opacity: .98 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* Texto vertical discreto abaixo do arco, como na referência. */
+.hero-right-rail {
+  right: 49px !important;
+  bottom: 188px !important;
+  z-index: 5 !important;
+  display: grid !important;
+  gap: 5px !important;
+  color: rgba(170, 206, 194, .42) !important;
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  line-height: 1.35;
+  letter-spacing: .34em !important;
+  text-align: left;
+  opacity: 1 !important;
+}
+
+/* Mantém o cartão da foto e a foto acima dos elementos decorativos. */
+.profile-wrap,
+.profile-frame,
+.profile-note {
+  position: relative;
+  z-index: 5;
+}
+
+@media (max-width: 1480px) {
+  .hero-quote {
+    right: 72px !important;
+    top: 266px !important;
+    font-size: 21px !important;
+    width: 136px;
+  }
+
+  .hero-side-loop {
+    right: -160px !important;
+    width: 216px !important;
+    opacity: .9 !important;
+  }
+
+  .hero-right-rail {
+    right: 24px !important;
+  }
+}
+
+/* Em larguras menores, esconder os detalhes laterais evita invadir a foto ou o texto. */
+@media (max-width: 1320px) {
+  .hero-quote,
+  .hero-side-loop,
+  .hero-right-rail {
+    display: none !important;
+  }
+}
