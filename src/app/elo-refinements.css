@@ -1,0 +1,317 @@
+/* Refinements inspired by Sandro's current Elo/LinkedIn visual identity. */
+
+.hero {
+  padding-bottom: 48px;
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 4;
+}
+
+.hero-left-rail,
+.hero-right-rail,
+.hero-quote,
+.hero-side-loop {
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.hero-left-rail {
+  left: 48px;
+  top: 154px;
+  display: grid;
+  gap: 5px;
+  color: rgba(174, 210, 198, .52);
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: .34em;
+}
+
+.hero-left-rail i {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin-bottom: 8px;
+  background: var(--elo-yellow);
+  border-radius: 99px;
+}
+
+.hero-quote {
+  right: 62px;
+  top: 268px;
+  color: rgba(18, 221, 197, .76);
+  font-family: "Segoe Print", "Bradley Hand", cursive;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 1.22;
+  transform: rotate(-5deg);
+  text-align: left;
+}
+
+.hero-quote i {
+  display: block;
+  width: 82px;
+  height: 2px;
+  margin-top: 13px;
+  background: var(--elo-yellow);
+  border-radius: 99px;
+  transform: rotate(-12deg);
+}
+
+.hero-right-rail {
+  right: 58px;
+  bottom: 202px;
+  display: grid;
+  gap: 5px;
+  color: rgba(174, 210, 198, .45);
+  font-size: 8px;
+  font-weight: 650;
+  letter-spacing: .34em;
+}
+
+.hero-side-loop {
+  right: -91px;
+  top: 214px;
+  width: 164px;
+  height: 330px;
+  border: 34px solid var(--accent);
+  border-top-color: var(--elo-blue);
+  border-right-color: var(--elo-purple);
+  border-bottom-color: var(--elo-red);
+  border-radius: 84px 0 0 84px;
+  opacity: .95;
+}
+
+.hero-copy {
+  max-width: 720px;
+}
+
+.hero-pillars {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+  max-width: 650px;
+  margin: 29px 0 17px;
+}
+
+.hero-pillars > div {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 18px;
+  border-right: 1px solid rgba(96, 201, 183, .34);
+}
+
+.hero-pillars > div:first-child {
+  padding-left: 0;
+}
+
+.hero-pillars > div:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.hero-pillars svg {
+  flex: 0 0 auto;
+  color: var(--accent);
+  filter: drop-shadow(0 0 10px rgba(18, 221, 197, .15));
+}
+
+.hero-pillars > div:nth-child(2) svg { color: var(--elo-yellow); }
+.hero-pillars > div:nth-child(3) svg { color: var(--elo-blue); }
+.hero-pillars > div:nth-child(4) svg { color: #58d5ba; }
+
+.hero-pillars span {
+  color: #b8ccc5;
+  font-size: 11px;
+  line-height: 1.24;
+}
+
+.location {
+  margin: 0 0 21px;
+}
+
+.profile-wrap {
+  isolation: isolate;
+}
+
+.profile-frame {
+  width: min(100%, 505px);
+  aspect-ratio: 0.79;
+  border-radius: 27px;
+  box-shadow:
+    0 28px 80px rgba(0, 0, 0, .34),
+    0 0 0 1px rgba(18, 221, 197, .1),
+    0 0 62px rgba(18, 221, 197, .06);
+}
+
+.profile-frame .asset-image {
+  object-fit: cover;
+  object-position: 50% 34%;
+  transform: scale(1.115);
+  transform-origin: 50% 34%;
+  image-rendering: auto;
+}
+
+.profile-note {
+  right: -33px;
+  bottom: 5px;
+  min-width: 198px;
+}
+
+.stats {
+  z-index: 5;
+  max-width: 1380px;
+}
+
+.stats > .stat-card {
+  min-height: 108px;
+  display: grid;
+  grid-template-columns: 50px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 22px;
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(18, 221, 197, .055);
+  color: var(--accent) !important;
+}
+
+.stat-copy {
+  display: grid;
+  gap: 1px;
+  min-width: 0;
+}
+
+.stats .stat-copy strong {
+  color: #fff;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.stats .stat-copy > span {
+  color: #a8bdb6;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.stat-arrow {
+  align-self: center;
+  color: var(--accent);
+}
+
+.stat-card.yellow .stat-icon,
+.stat-card.yellow .stat-arrow { color: var(--elo-yellow) !important; }
+.stat-card.blue .stat-icon,
+.stat-card.blue .stat-arrow { color: var(--elo-blue) !important; }
+.stat-card.red .stat-icon,
+.stat-card.red .stat-arrow { color: var(--elo-red) !important; }
+
+.stat-card.yellow .stat-icon { background: rgba(255, 215, 25, .055); }
+.stat-card.blue .stat-icon { background: rgba(84, 125, 255, .065); }
+.stat-card.red .stat-icon { background: rgba(255, 75, 67, .055); }
+
+.education-card:first-child h4 {
+  white-space: nowrap;
+  font-size: clamp(9.7px, .72vw, 11.4px);
+  letter-spacing: -.025em;
+}
+
+@media (max-width: 1480px) {
+  .hero-left-rail { left: 22px; }
+  .hero-quote { right: 20px; font-size: 20px; }
+  .hero-right-rail { right: 18px; }
+  .hero-side-loop { right: -112px; opacity: .72; }
+}
+
+@media (max-width: 1320px) {
+  .hero-left-rail,
+  .hero-quote,
+  .hero-right-rail,
+  .hero-side-loop {
+    display: none;
+  }
+  .profile-frame {
+    width: min(100%, 480px);
+  }
+}
+
+@media (max-width: 1040px) {
+  .hero-pillars {
+    max-width: 720px;
+  }
+  .profile-frame {
+    width: min(100%, 560px);
+  }
+  .profile-frame .asset-image {
+    transform: scale(1.06);
+  }
+}
+
+@media (max-width: 900px) {
+  .education-card:first-child h4 {
+    white-space: normal;
+    font-size: 12px;
+    letter-spacing: normal;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero-pillars {
+    grid-template-columns: 1fr 1fr;
+    gap: 17px 0;
+    margin-top: 25px;
+  }
+  .hero-pillars > div {
+    border-right: 0;
+    padding: 0 15px 0 0;
+  }
+  .hero-pillars > div:nth-child(even) {
+    padding-left: 16px;
+    border-left: 1px solid rgba(96, 201, 183, .26);
+  }
+  .stats > .stat-card {
+    min-height: 96px;
+    grid-template-columns: 43px 1fr auto;
+    gap: 11px;
+    padding: 17px;
+  }
+  .stat-icon {
+    width: 42px;
+    height: 42px;
+  }
+  .stats .stat-copy strong { font-size: 27px; }
+  .stats .stat-copy > span { white-space: normal; }
+}
+
+@media (max-width: 600px) {
+  .hero-pillars span {
+    font-size: 10.5px;
+  }
+  .profile-frame {
+    aspect-ratio: .78;
+  }
+  .profile-note {
+    right: 8px;
+    bottom: 8px;
+  }
+  .stats > .stat-card {
+    grid-template-columns: 40px 1fr;
+  }
+  .stat-arrow {
+    display: none;
+  }
+  .stat-icon {
+    width: 39px;
+    height: 39px;
+  }
+}

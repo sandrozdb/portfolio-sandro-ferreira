@@ -47,9 +47,9 @@ function buildPdf() {
   text(40, 697.6, "EXPERIÊNCIA", "F2", 12.3, COLORS.navy);
   line(40, 692.4, W - M, 692.4);
   text(40, 678.9, "Elo - Estagiário de Consultoria | IA Aplicada, Agentes de IA e Dados", "F2", 10);
-  text(40, 665.7, "Início previsto: set/2026", "F1", 8.5, COLORS.gray);
-  text(40, 653.2, "Atuação prevista na catalogação de casos de uso de IA em projetos de consultoria, testes de prompts e agentes para acelerar", "F1", 9);
-  text(40, 641.5, "análises e aplicação de IA em materiais e entregas reais do time.", "F1", 9);
+  text(40, 665.7, "set/2026 - atual", "F1", 8.5, COLORS.gray);
+  text(40, 653.2, "Atuação na catalogação de casos de uso de IA em projetos de consultoria, testes de prompts e agentes para acelerar análises e", "F1", 9);
+  text(40, 641.5, "aplicação de IA em materiais e entregas reais do time.", "F1", 9);
 
   text(40, 624.8, "Sentran - Auxiliar de Manutenção | Infraestrutura Tecnológica, Redes e Sistemas Inteligentes", "F2", 10);
   text(40, 612.6, "jan/2026 - ago/2026", "F1", 8.5, COLORS.gray);

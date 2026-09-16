@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, ArrowUp, Award, BarChart3, BrainCircuit, BriefcaseBusiness, BriefcaseBusiness as Linkedin, ChevronRight, Code2, Code2 as Github, Database, ExternalLink, Mail, MapPin, Menu, Network, Search, Target, Users, Wrench, X } from "lucide-react";
+import { ArrowRight, ArrowUp, Award, BarChart3, BrainCircuit, BriefcaseBusiness, BriefcaseBusiness as Linkedin, ChevronRight, Code2, Code2 as Github, Database, ExternalLink, FolderKanban, GraduationCap, Lightbulb, Mail, MapPin, Menu, Network, Search, Settings2, Target, Users, Wrench, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { projects } from "@/data/projects";
 import { experiences } from "@/data/experience";
@@ -22,6 +22,13 @@ const processSteps = [
   { label: "Indicadores", icon: Database }, { label: "Resultados", icon: Award },
 ];
 
+const heroStats = [
+  { number: "100k+", label: "Seguidores", icon: Users, tone: "mint" },
+  { number: "10", label: "Certificações", icon: Award, tone: "yellow" },
+  { number: String(projects.length), label: "Projetos", icon: FolderKanban, tone: "blue" },
+  { number: "3", label: "Formações acadêmicas", icon: GraduationCap, tone: "red" },
+];
+
 function Reveal({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   const reduced = useReducedMotion();
   return <motion.div className={className} initial={reduced ? false : { opacity: 0, y: 18 }} whileInView={reduced ? {} : { opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.18 }} transition={{ duration: 0.55 }}>{children}</motion.div>;
@@ -35,7 +42,7 @@ function AssetImage({ src, alt, kind }: { src: string; alt: string; kind: "profi
   if (src.startsWith("/api/") || src.startsWith("http://") || src.startsWith("https://")) {
     return <img src={src} alt={alt} className="asset-image" loading="lazy" decoding="async" />;
   }
-  return <Image src={src} alt={alt} fill sizes={kind === "profile" ? "(max-width: 560px) calc(100vw - 44px), 400px" : "(max-width: 800px) calc(100vw - 28px), 560px"} quality={100} unoptimized className="asset-image" priority={kind === "profile"} />;
+  return <Image src={src} alt={alt} fill sizes={kind === "profile" ? "(max-width: 560px) calc(100vw - 44px), 520px" : "(max-width: 800px) calc(100vw - 28px), 560px"} quality={100} unoptimized className="asset-image" priority={kind === "profile"} />;
 }
 
 function ProjectCard({ project }: { project: Project }) {
@@ -69,9 +76,31 @@ export function Portfolio() {
     </div>{menuOpen && <nav id="mobile-menu" className="mobile-nav" aria-label="Navegação mobile">{navItems.map(([label, id]) => <a key={id} href={`#${id}`} onClick={() => setMenuOpen(false)}>{label}</a>)}<a className="button" href="/curriculo-sandro-ferreira.pdf" download>Baixar currículo</a></nav>}</header>
 
     <main id="conteudo">
-      <section id="inicio" className="hero"><div className="hero-glow" /><div className="container hero-grid"><Reveal className="hero-copy"><span className="eyebrow">CONSULTORIA • IA • DADOS • AUTOMAÇÃO</span><h1>Sandro<br /><em>Ferreira</em></h1><p className="hero-lead">Transformo problemas reais em soluções com dados, inteligência artificial e automação.</p><p className="location"><MapPin size={16} /> Embu das Artes – SP</p><div className="hero-actions"><a className="button primary" href="#projetos">Ver projetos <ArrowRight size={17} /></a><a className="button icon" href="https://www.linkedin.com/in/sandrozdb/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Sandro Ferreira"><Linkedin size={18} /> LinkedIn</a><a className="button icon" href="https://github.com/sandrozdb" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Sandro Ferreira"><Github size={18} /> GitHub</a></div><a className="curriculum-link" href="/curriculo-sandro-ferreira.pdf" download>Baixar currículo <ChevronRight size={15} /></a></Reveal>
-      <Reveal className="profile-wrap"><div className="profile-frame"><AssetImage src="/profile/sandro-ferreira-elo.webp" alt="Foto profissional de Sandro Ferreira" kind="profile" /></div><div className="profile-note"><span /><p>Tecnologia com<br /><strong>visão de negócio.</strong></p></div></Reveal></div>
-      <div className="container stats" aria-label="Números de destaque">{[["100k+", "Seguidores"], ["10", "Certificações"], [String(projects.length), "Projetos"], ["3", "Formações acadêmicas"]].map(([number, label]) => <div key={label}><strong>{number}</strong><span>{label}</span></div>)}</div></section>
+      <section id="inicio" className="hero">
+        <div className="hero-glow" />
+        <div className="hero-left-rail" aria-hidden="true"><i /><span>IDEIAS</span><span>DADOS</span><span>PESSOAS</span><span>IMPACTO</span></div>
+        <div className="hero-quote" aria-hidden="true">Dados<br />tornam<br />possibilidades<br />reais.<i /></div>
+        <div className="hero-right-rail" aria-hidden="true"><span>AUTOMAÇÃO</span><span>INTELIGÊNCIA</span><span>RESULTADOS</span><span>SEMPRE</span></div>
+        <div className="hero-side-loop" aria-hidden="true" />
+        <div className="container hero-grid">
+          <Reveal className="hero-copy">
+            <span className="eyebrow">CONSULTORIA • IA • DADOS • AUTOMAÇÃO</span>
+            <h1>Sandro<br /><em>Ferreira</em></h1>
+            <p className="hero-lead">Transformo problemas reais em soluções com dados, inteligência artificial e automação.</p>
+            <div className="hero-pillars" aria-label="Áreas de atuação">
+              <div><BarChart3 size={22} /><span>Dados<br />que geram valor</span></div>
+              <div><Lightbulb size={22} /><span>IA aplicada<br />ao negócio</span></div>
+              <div><Settings2 size={22} /><span>Processos<br />mais eficientes</span></div>
+              <div><Users size={22} /><span>Pessoas<br />e tecnologia</span></div>
+            </div>
+            <p className="location"><MapPin size={16} /> Embu das Artes – SP</p>
+            <div className="hero-actions"><a className="button primary" href="#projetos">Ver projetos <ArrowRight size={17} /></a><a className="button icon" href="https://www.linkedin.com/in/sandrozdb/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Sandro Ferreira"><Linkedin size={18} /> LinkedIn</a><a className="button icon" href="https://github.com/sandrozdb" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Sandro Ferreira"><Github size={18} /> GitHub</a></div>
+            <a className="curriculum-link" href="/curriculo-sandro-ferreira.pdf" download>Baixar currículo <ChevronRight size={15} /></a>
+          </Reveal>
+          <Reveal className="profile-wrap"><div className="profile-frame"><AssetImage src="/profile/sandro-ferreira-elo-hq.webp" alt="Foto profissional de Sandro Ferreira" kind="profile" /></div><div className="profile-note"><span /><p>Tecnologia com<br /><strong>visão de negócio.</strong></p></div></Reveal>
+        </div>
+        <div className="container stats" aria-label="Números de destaque">{heroStats.map(({ number, label, icon: Icon, tone }) => <div key={label} className={`stat-card ${tone}`}><span className="stat-icon"><Icon size={29} strokeWidth={1.75} /></span><span className="stat-copy"><strong>{number}</strong><span>{label}</span></span><ArrowRight className="stat-arrow" size={18} /></div>)}</div>
+      </section>
 
       <section id="sobre" className="section about-section"><div className="container narrow"><Reveal><SectionHeading className="about-heading" eyebrow="01 — SOBRE MIM" title="Tecnologia aplicada para resolver problemas reais." /><p className="about-text">Sou estudante de Engenharia da Computação e de Inteligência Artificial e Automação Digital, com foco em usar dados, inteligência artificial e automação para resolver problemas reais de negócio. Minha trajetória combina experiência em infraestrutura tecnológica, formação como Oficial da Arma de Comunicações do Exército Brasileiro e a construção de uma marca digital com mais de 100 mil seguidores — vivências que fortaleceram minha visão analítica, comunicação, liderança e capacidade de execução.</p></Reveal></div></section>
 
