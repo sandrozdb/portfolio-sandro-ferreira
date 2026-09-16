@@ -46,13 +46,14 @@ function buildPdf() {
 
   text(40, 697.6, "EXPERIÊNCIA", "F2", 12.3, COLORS.navy);
   line(40, 692.4, W - M, 692.4);
+
   text(40, 678.9, "Elo - Estagiário de Consultoria | IA Aplicada, Agentes de IA e Dados", "F2", 10);
-  text(40, 665.7, "set/2026 - atual", "F1", 8.5, COLORS.gray);
+  text(370.3, 678.9, "| set/2026 - atual", "F1", 8.5, COLORS.gray);
   text(40, 653.2, "Atuação na catalogação de casos de uso de IA em projetos de consultoria, testes de prompts e agentes para acelerar análises e", "F1", 9);
   text(40, 641.5, "aplicação de IA em materiais e entregas reais do time.", "F1", 9);
 
-  text(40, 624.8, "Sentran - Auxiliar de Manutenção | Infraestrutura Tecnológica, Redes e Sistemas Inteligentes", "F2", 10);
-  text(40, 612.6, "jan/2026 - ago/2026", "F1", 8.5, COLORS.gray);
+  text(40, 624.8, "Sentran - Auxiliar de Manutenção | Infraestrutura Tecnológica, Redes e Sistemas Inteligentes", "F2", 8.9);
+  text(441.2, 624.8, "| jan/2026 - ago/2026", "F1", 8.5, COLORS.gray);
   text(40, 601, "Atuação em diagnóstico de falhas, testes, manutenção e suporte em sistemas inteligentes de monitoramento, com redes", "F1", 9);
   text(40, 589.3, "TCP/IP, hardware, telecomunicações e foco em disponibilidade operacional.", "F1", 9);
 
@@ -119,10 +120,13 @@ function buildPdf() {
   const objects = [
     `<< /Type /Catalog /Pages 2 0 R >>`,
     `<< /Type /Pages /Kids [3 0 R] /Count 1 >>`,
-    `<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${W.toFixed(2)} ${H.toFixed(2)}] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>`,
+    `<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${W.toFixed(2)} ${H.toFixed(2)}] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R /Annots [7 0 R 8 0 R 9 0 R] >>`,
     `<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>`,
     `<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>`,
     `<< /Length ${stream.length} >>\nstream\n${stream}endstream`,
+    `<< /Type /Annot /Subtype /Link /Rect [165.98 756 224.09 770] /Border [0 0 0] /A << /S /URI /URI (https://sandrozdb.com) >> >>`,
+    `<< /Type /Annot /Subtype /Link /Rect [235.75 756 334.01 770] /Border [0 0 0] /A << /S /URI /URI (https://www.linkedin.com/in/sandrozdb/) >> >>`,
+    `<< /Type /Annot /Subtype /Link /Rect [345.67 756 429.30 770] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sandrozdb) >> >>`,
     `<< /Title ${toHex("Currículo - Sandro Ferreira")} /Author ${toHex("Sandro Ferreira")} /Subject ${toHex("Consultoria, Inteligência Artificial, Dados e Automação")} >>`,
   ];
 
@@ -138,7 +142,7 @@ function buildPdf() {
   for (const offset of offsets.slice(1)) {
     out += `${String(offset).padStart(10, "0")} 00000 n \n`;
   }
-  out += `trailer\n<< /Size ${objects.length + 1} /Root 1 0 R /Info 7 0 R >>\nstartxref\n${xref}\n%%EOF\n`;
+  out += `trailer\n<< /Size ${objects.length + 1} /Root 1 0 R /Info 10 0 R >>\nstartxref\n${xref}\n%%EOF\n`;
   return new TextEncoder().encode(out);
 }
 
