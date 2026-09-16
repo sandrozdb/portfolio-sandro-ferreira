@@ -6,6 +6,7 @@ import "./project-grid.css";
 import "./elo-theme.css";
 import "./elo-refinements.css";
 import "./elo-right-reference.css";
+import "./profile-photo.css";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
 const siteUrl = "https://sandrozdb.com";
