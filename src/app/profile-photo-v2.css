@@ -1,0 +1,14 @@
+/* Hero profile photo — cache-busted static asset. */
+.profile-frame {
+  background-image: url("/profile/sandro-ferreira-elo-v2.webp") !important;
+  background-size: cover !important;
+  background-position: 50% 34% !important;
+  background-repeat: no-repeat !important;
+  background-color: #0c1214;
+}
+
+.profile-frame .asset-image,
+.profile-frame img {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
