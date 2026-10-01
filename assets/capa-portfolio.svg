@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500" role="img" aria-labelledby="title desc">
+  <title id="title">Portfólio Profissional — Sandro Ferreira</title>
+  <desc id="desc">Capa do repositório do portfólio profissional de Sandro Ferreira</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07090c"/>
+      <stop offset="0.56" stop-color="#0d1116"/>
+      <stop offset="1" stop-color="#15120e"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b97825"/>
+      <stop offset="0.52" stop-color="#d6a15a"/>
+      <stop offset="1" stop-color="#f2c987"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#d6a15a" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#d6a15a" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M56 0H0V56" fill="none" stroke="#d6a15a" stroke-width="1" opacity=".07"/>
+    </pattern>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="500" rx="28" fill="url(#bg)"/>
+  <rect width="1600" height="500" rx="28" fill="url(#grid)"/>
+  <circle cx="1405" cy="62" r="250" fill="url(#glow)" filter="url(#blur)"/>
+  <circle cx="1240" cy="470" r="280" fill="url(#glow)" opacity=".55" filter="url(#blur)"/>
+
+  <path d="M1050 500 C1135 360 1245 242 1600 145" fill="none" stroke="#d6a15a" stroke-width="2" opacity=".55"/>
+  <path d="M980 500 C1095 300 1260 180 1600 92" fill="none" stroke="#b97825" stroke-width="1.4" opacity=".38"/>
+
+  <g transform="translate(92 72)">
+    <rect x="0" y="0" width="58" height="6" rx="3" fill="url(#gold)"/>
+    <text x="0" y="39" fill="#d6a15a" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="4">PORTFÓLIO PROFISSIONAL</text>
+
+    <text x="0" y="144" fill="#f4efe8" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="800">Sandro</text>
+    <text x="292" y="144" fill="url(#gold)" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="800">Ferreira</text>
+
+    <text x="0" y="210" fill="#f4efe8" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="500">Consultoria • IA • Dados • Automação</text>
+    <text x="0" y="263" fill="#b8afa4" font-family="Arial, Helvetica, sans-serif" font-size="24">Tecnologia aplicada para resolver problemas reais.</text>
+
+    <g transform="translate(0 322)">
+      <rect x="0" y="0" width="154" height="52" rx="13" fill="#d6a15a"/>
+      <text x="77" y="33" text-anchor="middle" fill="#171007" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">sandrozdb.com</text>
+    </g>
+  </g>
+
+  <g transform="translate(1052 92)">
+    <rect x="0" y="0" width="430" height="310" rx="30" fill="#0a0d10" stroke="#d6a15a" stroke-opacity=".48" stroke-width="2"/>
+    <rect x="24" y="24" width="382" height="42" rx="12" fill="#0f1318" stroke="#d6a15a" stroke-opacity=".16"/>
+    <circle cx="48" cy="45" r="5" fill="#d6a15a"/>
+    <circle cx="66" cy="45" r="5" fill="#b97825" opacity=".8"/>
+    <circle cx="84" cy="45" r="5" fill="#f2c987" opacity=".7"/>
+
+    <text x="32" y="112" fill="#d6a15a" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">CONSULTORIA • IA • DADOS</text>
+    <text x="32" y="158" fill="#f4efe8" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">Sandro Ferreira</text>
+    <text x="32" y="190" fill="#b8afa4" font-family="Arial, Helvetica, sans-serif" font-size="15">Problemas reais. Soluções com tecnologia.</text>
+
+    <g transform="translate(32 222)">
+      <rect width="100" height="54" rx="12" fill="#17130f" stroke="#d6a15a" stroke-opacity=".26"/>
+      <rect x="114" width="100" height="54" rx="12" fill="#17130f" stroke="#d6a15a" stroke-opacity=".26"/>
+      <rect x="228" width="100" height="54" rx="12" fill="#17130f" stroke="#d6a15a" stroke-opacity=".26"/>
+      <text x="50" y="33" text-anchor="middle" fill="#f2c987" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Projetos</text>
+      <text x="164" y="33" text-anchor="middle" fill="#f2c987" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Experiência</text>
+      <text x="278" y="33" text-anchor="middle" fill="#f2c987" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Formação</text>
+    </g>
+  </g>
+</svg>
