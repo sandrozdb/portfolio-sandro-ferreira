@@ -48,22 +48,22 @@ function buildPdf() {
   line(40, 692.4, W - M, 692.4);
 
   text(40, 678.9, "Elo - Estagiário de Consultoria | IA Aplicada, Agentes de IA e Dados", "F2", 10);
-  text(370.3, 678.9, "| set/2026 - atual", "F1", 8.5, COLORS.gray);
+  text(365.11, 678.9, "| set/2026 - atual", "F1", 8.5, COLORS.gray);
   text(40, 666.2, "Atuação na catalogação de casos de uso de IA em projetos de consultoria, testes de prompts e agentes para acelerar análises e", "F1", 9);
   text(40, 654.8, "aplicação de IA em materiais e entregas reais do time.", "F1", 9);
 
   text(40, 639.0, "Sentran - Auxiliar de Manutenção | Infraestrutura Tecnológica, Redes e Sistemas Inteligentes", "F2", 8.9);
-  text(441.2, 639.0, "| jan/2026 - ago/2026", "F1", 8.5, COLORS.gray);
+  text(435.69, 639.0, "| jan/2026 - ago/2026", "F1", 8.5, COLORS.gray);
   text(40, 626.3, "Atuação em diagnóstico de falhas, testes, manutenção e suporte em sistemas inteligentes de monitoramento, com redes", "F1", 9);
   text(40, 614.9, "TCP/IP, hardware, telecomunicações e foco em disponibilidade operacional.", "F1", 9);
 
   text(40, 599.1, "Marca Pessoal | @sandrozdb - Criador de Conteúdo Digital | Analytics e Estratégia Digital", "F2", 10);
-  text(470.46, 599.1, "| jan/2024 - dez/2025", "F1", 8.5, COLORS.gray);
+  text(468.24, 599.1, "| jan/2024 - dez/2025", "F1", 8.5, COLORS.gray);
   text(40, 586.4, "Gestão de marca pessoal com mais de 100 mil seguidores, utilizando métricas de alcance, engajamento e retenção para orientar", "F1", 9);
   text(40, 575.0, "conteúdo, crescimento orgânico, branding e relacionamento com marcas.", "F1", 9);
 
   text(40, 559.2, "Exército Brasileiro - Aspirante a Oficial da Arma de Comunicações", "F2", 10);
-  text(361.22, 559.2, "| jan/2023 - dez/2023", "F1", 8.5, COLORS.gray);
+  text(359.00, 559.2, "| jan/2023 - dez/2023", "F1", 8.5, COLORS.gray);
   text(40, 546.5, "Formação e atuação em comunicações, redes, infraestrutura tecnológica e segurança da informação, com desenvolvimento de", "F1", 9);
   text(40, 535.1, "liderança, trabalho em equipe, disciplina e tomada de decisão sob pressão.", "F1", 9);
 
