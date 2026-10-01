@@ -89,7 +89,7 @@ export function Portfolio() {
               <div><Settings2 size={22} /><span>Processos<br />mais eficientes</span></div>
               <div><Users size={22} /><span>Pessoas<br />e tecnologia</span></div>
             </div>
-            <p className="location"><MapPin size={16} /> Embu das Artes – SP</p>
+            <p className="location"><MapPin size={16} /> Taboão da Serra – SP</p>
             <div className="hero-actions"><a className="button primary" href="#projetos">Ver projetos <ArrowRight size={17} /></a><a className="button icon" href="https://www.linkedin.com/in/sandrozdb/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Sandro Ferreira"><Linkedin size={18} /> LinkedIn</a><a className="button icon" href="https://github.com/sandrozdb" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Sandro Ferreira"><Github size={18} /> GitHub</a></div>
             <a className="curriculum-link" href="/curriculo-sandro-ferreira.pdf" download>Baixar currículo <ChevronRight size={15} /></a>
           </Reveal>
