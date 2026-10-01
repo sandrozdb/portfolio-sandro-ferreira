@@ -78,10 +78,6 @@ export function Portfolio() {
     <main id="conteudo">
       <section id="inicio" className="hero">
         <div className="hero-glow" />
-        <div className="hero-left-rail" aria-hidden="true"><i /><span>IDEIAS</span><span>DADOS</span><span>PESSOAS</span><span>IMPACTO</span></div>
-        <div className="hero-quote" aria-hidden="true">Dados<br />tornam<br />possibilidades<br />reais.<i /></div>
-        <div className="hero-right-rail" aria-hidden="true"><span>AUTOMAÇÃO</span><span>INTELIGÊNCIA</span><span>RESULTADOS</span><span>SEMPRE</span></div>
-        <div className="hero-side-loop" aria-hidden="true" />
         <div className="container hero-grid">
           <Reveal className="hero-copy">
             <span className="eyebrow">CONSULTORIA • IA • DADOS • AUTOMAÇÃO</span>
@@ -97,7 +93,7 @@ export function Portfolio() {
             <div className="hero-actions"><a className="button primary" href="#projetos">Ver projetos <ArrowRight size={17} /></a><a className="button icon" href="https://www.linkedin.com/in/sandrozdb/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Sandro Ferreira"><Linkedin size={18} /> LinkedIn</a><a className="button icon" href="https://github.com/sandrozdb" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Sandro Ferreira"><Github size={18} /> GitHub</a></div>
             <a className="curriculum-link" href="/curriculo-sandro-ferreira.pdf" download>Baixar currículo <ChevronRight size={15} /></a>
           </Reveal>
-          <Reveal className="profile-wrap"><div className="profile-frame"><AssetImage src="/profile/sandro-ferreira-elo-hq.webp" alt="Foto profissional de Sandro Ferreira" kind="profile" /></div><div className="profile-note"><span /><p>Tecnologia com<br /><strong>visão de negócio.</strong></p></div></Reveal>
+          <Reveal className="profile-wrap"><div className="profile-frame"><AssetImage src="/api/profile-photo-hq" alt="Foto profissional de Sandro Ferreira" kind="profile" /></div><div className="profile-note"><span /><p>Tecnologia com<br /><strong>visão de negócio.</strong></p></div></Reveal>
         </div>
         <div className="container stats" aria-label="Números de destaque">{heroStats.map(({ number, label, icon: Icon, tone }) => <div key={label} className={`stat-card ${tone}`}><span className="stat-icon"><Icon size={29} strokeWidth={1.75} /></span><span className="stat-copy"><strong>{number}</strong><span>{label}</span></span><ArrowRight className="stat-arrow" size={18} /></div>)}</div>
       </section>
