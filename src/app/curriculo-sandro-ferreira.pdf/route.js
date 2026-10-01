@@ -37,7 +37,7 @@ function buildPdf() {
 
   text(195.56, 812, "SANDRO FERREIRA", "F2", 21, COLORS.navy);
   text(158.01, 788, "Consultoria | Inteligência Artificial | Dados | Automação", "F2", 10.6);
-  text(166.90, 772, "Embu das Artes - SP  |  (11) 95056-4700  |  sandrozdb@gmail.com", "F1", 8.8, COLORS.gray);
+  text(166.90, 772, "Taboão da Serra - SP  |  (11) 95056-4700  |  sandrozdb@gmail.com", "F1", 8.8, COLORS.gray);
   text(165.98, 759, "sandrozdb.com  |  linkedin.com/in/sandrozdb  |  github.com/sandrozdb", "F1", 8.5, COLORS.blue);
 
   text(40, 741, "Estudante de Engenharia da Computação e de Inteligência Artificial e Automação Digital, com foco em consultoria, dados, IA", "F1", 9.2);
