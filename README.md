@@ -1,49 +1,86 @@
-# Portfólio Profissional — Sandro Ferreira
+<p align="center">
+  <img src="assets/capa-portfolio.svg" alt="Portfólio Profissional — Sandro Ferreira" width="100%">
+</p>
 
-> Portfólio profissional criado para reunir minha trajetória, experiências, projetos e competências em consultoria, inteligência artificial, dados, automação e tecnologia.
+<h1 align="center">Portfólio Profissional — Sandro Ferreira</h1>
 
-**Site oficial:** [sandrozdb.com](https://sandrozdb.com)
+<p align="center">
+  Consultoria • Inteligência Artificial • Dados • Automação
+</p>
+
+<p align="center">
+  <a href="https://sandrozdb.com"><strong>🌐 Ver portfólio</strong></a> •
+  <a href="https://www.linkedin.com/in/sandrozdb/"><strong>LinkedIn</strong></a> •
+  <a href="https://github.com/sandrozdb"><strong>GitHub</strong></a>
+</p>
+
+---
 
 ## Sobre o projeto
 
-Este portfólio foi desenvolvido como uma central da minha trajetória profissional e acadêmica, reunindo experiências, projetos, competências, formação e certificações em uma única experiência digital. Mais do que apresentar tecnologias, o objetivo é demonstrar como utilizo dados, inteligência artificial, automação e tecnologia para estruturar problemas e desenvolver soluções.
+Este repositório contém meu portfólio profissional, criado para reunir em um único lugar minha trajetória, experiências, projetos, competências, formação e certificações.
 
-**Consultoria • Inteligência Artificial • Dados • Automação**
+O foco do projeto não é apenas listar tecnologias, mas mostrar como aplico **dados, inteligência artificial, automação e tecnologia** para estruturar problemas, desenvolver soluções e gerar valor.
 
-> Transformo problemas reais em soluções com dados, inteligência artificial e automação.
+> **Transformo problemas reais em soluções com dados, inteligência artificial e automação.**
+
+### Acesse
+
+**Site oficial:** [sandrozdb.com](https://sandrozdb.com)
+
+---
 
 ## O que você encontra no portfólio
 
-- Sobre mim e posicionamento profissional
-- Experiência profissional
-- Metodologia de resolução de problemas
-- Projetos em destaque e outros projetos
-- Competências técnicas e de negócio
-- Formação acadêmica
-- Certificações e idiomas
-- Contato e currículo profissional
+- apresentação e posicionamento profissional;
+- experiências profissionais;
+- metodologia de resolução de problemas;
+- projetos em destaque;
+- competências técnicas e de negócio;
+- formação acadêmica;
+- certificações e idiomas;
+- currículo para download;
+- formas de contato.
 
-## Projetos em destaque
+---
+
+## Projetos apresentados
 
 ### LifeBox — Transporte Inteligente de Órgãos
 
-Projeto acadêmico que integra IoT, telemetria, otimização de rotas, alertas, dashboard e análise operacional.
+MVP acadêmico voltado ao monitoramento e rastreabilidade do transporte de órgãos, integrando telemetria, alertas, dashboard, API e otimização de rotas.
+
+**Tecnologias:** Node.js, Express, MySQL, IoT e Pesquisa Operacional.
+
+### EasyFood — API de Restaurantes
+
+Aplicação para consulta e cadastro de restaurantes, com autenticação, autorização, persistência em banco de dados e evolução arquitetural documentada.
+
+**Tecnologias:** Node.js, Express, MySQL, Prisma e APIs REST.
 
 ### Automação de Triagem de Notas Fiscais
 
-Workflow com n8n, OCR e Python voltado à automação de processos documentais.
+Workflow para recebimento, leitura, aplicação de regras e direcionamento de documentos fiscais.
+
+**Tecnologias:** n8n, OCR, Python e automação de processos.
 
 ### Vitrine de Carreira
 
-Plataforma web voltada ao diagnóstico profissional, posicionamento e evolução de carreira.
+Plataforma web de diagnóstico profissional e aderência a oportunidades, transformando informações de carreira em recomendações práticas.
+
+**Tecnologias:** HTML, CSS, JavaScript e UX.
 
 ### Sistema IoT de Monitoramento Ambiental
 
-Sistema com ESP32, sensores, atuadores e visualização de dados no ThingSpeak.
+Sistema de coleta e monitoramento ambiental com sensores, atuadores e envio de telemetria para a nuvem.
 
-## Como eu penso
+**Tecnologias:** ESP32, C++, Wokwi e ThingSpeak.
 
-O processo começa pela estruturação do problema e das evidências antes da escolha da tecnologia:
+---
+
+## Como eu estruturo problemas
+
+Antes de escolher uma tecnologia, procuro entender o problema, suas causas, quem é impactado, quais evidências existem e como o resultado poderá ser medido.
 
 ```text
 Problema
@@ -63,33 +100,60 @@ Indicadores
 Resultados
 ```
 
+---
+
 ## Identidade visual
 
-A interface utiliza uma identidade própria baseada em **grafite, azul-marinho e azul-ciano**, alinhada ao favicon e à imagem de compartilhamento do projeto.
+A interface utiliza uma identidade própria baseada em:
+
+- **preto e carvão** para a base;
+- **azul-marinho muito escuro** nos fundos e superfícies;
+- **dourado e cobre** nos destaques e elementos interativos;
+- **off-white** para textos principais.
+
+Principais cores:
+
+```text
+#07090C  fundo principal
+#0D1116  superfície
+#D6A15A  dourado principal
+#B97825  cobre
+#F2C987  destaque claro
+#F4EFE8  texto principal
+```
+
+---
 
 ## Tecnologias
 
-- Next.js com App Router
+- Next.js
 - TypeScript
 - Tailwind CSS
 - Framer Motion
 - Lucide React
-- Vercel Analytics
 - Next/Image
+- Vercel Analytics
+- Vercel
 
-## Estrutura
+---
+
+## Estrutura do projeto
 
 ```text
 src/
-├── app/             # aplicação, estilos, SEO e metadados
+├── app/             # aplicação, estilos, SEO, APIs e metadados
 ├── components/      # componentes visuais e interativos
 ├── data/            # projetos, experiências, formação e competências
 └── types/           # tipagens TypeScript
 
+assets/
+└── capa-portfolio.svg
+
 public/
-├── projects/        # capas oficiais dos projetos
-└── curriculo-sandro-ferreira.pdf
+└── projects/        # capas e assets dos projetos
 ```
+
+---
 
 ## Executar localmente
 
@@ -100,17 +164,27 @@ npm install
 npm run dev
 ```
 
-A aplicação estará disponível em [http://localhost:3000](http://localhost:3000).
+Depois, acesse:
 
-## Qualidade
+```text
+http://localhost:3000
+```
 
-O projeto é verificado com:
+---
 
-- TypeScript em modo estrito
-- ESLint
-- Build de produção do Next.js
-- Revisão responsiva em desktop e mobile
-- HTML semântico e acessibilidade básica
+## Qualidade e validação
+
+O projeto utiliza práticas de validação e qualidade como:
+
+- TypeScript;
+- ESLint;
+- build de produção com Next.js;
+- revisão responsiva para desktop e mobile;
+- HTML semântico;
+- acessibilidade básica;
+- otimização de imagens e metadados.
+
+Comandos principais:
 
 ```bash
 npm run lint
@@ -118,15 +192,23 @@ npm run typecheck
 npm run build
 ```
 
+---
+
 ## Deploy
 
-O projeto foi preparado para deploy contínuo na Vercel a partir da branch `main`.
+O deploy é realizado pela **Vercel**, conectado à branch `main`.
 
-**Domínio oficial:** `sandrozdb.com`
+**Domínio oficial:** [sandrozdb.com](https://sandrozdb.com)
+
+---
 
 ## Status
 
-**Versão 1.0 concluída — pronta para produção.**
+✅ **Em produção**
+
+O portfólio segue em evolução contínua conforme novos projetos, experiências e certificações são adicionados.
+
+---
 
 ## Autor
 
@@ -135,6 +217,8 @@ O projeto foi preparado para deploy contínuo na Vercel a partir da branch `main
 - Portfólio: [sandrozdb.com](https://sandrozdb.com)
 - LinkedIn: [linkedin.com/in/sandrozdb](https://www.linkedin.com/in/sandrozdb/)
 - GitHub: [github.com/sandrozdb](https://github.com/sandrozdb)
+
+---
 
 ## Licença
 
