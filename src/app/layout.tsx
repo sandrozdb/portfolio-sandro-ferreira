@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import "./project-grid.css";
 import "./personal-theme.css";
+import "./executive-gold.css";
 import "./profile-photo.css";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
