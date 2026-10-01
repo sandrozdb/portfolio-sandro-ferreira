@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/capa-portfolio.png" alt="Portfólio Profissional — Sandro Ferreira" width="100%">
-</p>
-
 # Portfólio Profissional — Sandro Ferreira
 
 > Portfólio profissional criado para reunir minha trajetória, experiências, projetos e competências em consultoria, inteligência artificial, dados, automação e tecnologia.
@@ -15,15 +11,6 @@ Este portfólio foi desenvolvido como uma central da minha trajetória profissio
 **Consultoria • Inteligência Artificial • Dados • Automação**
 
 > Transformo problemas reais em soluções com dados, inteligência artificial e automação.
-
-## Experiência atual
-
-**Elo — Estagiário de Consultoria | IA Aplicada, Agentes de IA e Dados**
-
-Atividades previstas no contrato:
-- Catalogar casos de uso de IA em projetos de consultoria.
-- Testar prompts e agentes para acelerar análises.
-- Aplicar IA em materiais e entregas reais do time.
 
 ## O que você encontra no portfólio
 
@@ -76,6 +63,10 @@ Indicadores
 Resultados
 ```
 
+## Identidade visual
+
+A interface utiliza uma identidade própria baseada em **grafite, azul-marinho e azul-ciano**, alinhada ao favicon e à imagem de compartilhamento do projeto.
+
 ## Tecnologias
 
 - Next.js com App Router
@@ -96,12 +87,8 @@ src/
 └── types/           # tipagens TypeScript
 
 public/
-├── profile/         # foto profissional
 ├── projects/        # capas oficiais dos projetos
 └── curriculo-sandro-ferreira.pdf
-
-assets/
-└── capa-portfolio.png  # captura real da Hero usada neste README
 ```
 
 ## Executar localmente
