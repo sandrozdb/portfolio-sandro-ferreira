@@ -40,17 +40,17 @@ function buildPdf() {
   text(166.90, 772, "Taboão da Serra - SP  |  (11) 95056-4700  |  sandrozdb@gmail.com", "F1", 8.8, COLORS.gray);
   text(165.98, 759, "sandrozdb.com  |  linkedin.com/in/sandrozdb  |  github.com/sandrozdb", "F1", 8.5, COLORS.blue);
 
-  text(40, 741, "Estagiário de Consultoria na Elo e estudante de Engenharia da Computação e de Inteligência Artificial e Automação Digital, com foco", "F1", 9.2);
-  text(40, 729.2, "em IA aplicada, dados e automação. Experiência em estruturação de problemas, análise de informações e desenvolvimento de soluções", "F1", 9.2);
-  text(40, 717.4, "tecnológicas para desafios de negócio, combinando visão analítica, comunicação e capacidade de execução.", "F1", 9.2);
+  text(40, 741, "Estagiário de Consultoria na Elo e estudante de Engenharia da Computação e de Inteligência Artificial e Automação Digital, com", "F1", 8.8);
+  text(40, 729.2, "foco em IA aplicada, dados e automação. Experiência em estruturação de problemas, análise de informações e desenvolvimento", "F1", 8.8);
+  text(40, 717.4, "de soluções tecnológicas para desafios de negócio, combinando visão analítica, comunicação e capacidade de execução.", "F1", 8.8);
 
   text(40, 697.6, "EXPERIÊNCIA", "F2", 12.3, COLORS.navy);
   line(40, 692.4, W - M, 692.4);
 
   text(40, 678.9, "Elo - Estagiário de Consultoria | IA Aplicada, Agentes de IA e Dados", "F2", 10);
   text(365.11, 678.9, "| set/2026 - atual", "F1", 8.5, COLORS.gray);
-  text(40, 666.2, "Atuação em projetos de consultoria com foco em IA aplicada, dados e automação, apoiando a estruturação de problemas, análise de", "F1", 9);
-  text(40, 654.8, "informações, identificação de casos de uso de IA, experimentação de prompts e agentes e construção de materiais executivos.", "F1", 9);
+  text(40, 666.2, "Atuação em projetos de consultoria com foco em IA aplicada, dados e automação, apoiando a estruturação de problemas, análise", "F1", 8.8);
+  text(40, 654.8, "de informações, identificação de casos de uso de IA, experimentação de prompts e agentes e construção de materiais executivos.", "F1", 8.8);
 
   text(40, 639.0, "Sentran - Auxiliar de Manutenção | Infraestrutura Tecnológica, Redes e Sistemas Inteligentes", "F2", 8.9);
   text(435.69, 639.0, "| jan/2026 - ago/2026", "F1", 8.5, COLORS.gray);
@@ -90,8 +90,8 @@ function buildPdf() {
 
   text(40, 348, "CorpAI - Assistente Corporativo Inteligente", "F2", 9.8);
   text(250, 348, "| n8n | Gemini | IA Generativa | Automação | Human in the Loop", "F1", 8.2, COLORS.gray);
-  text(40, 335.7, "Assistente corporativo com IA generativa para classificação, redação e revisão de comunicações, integrando automação de workflows e", "F1", 8.75);
-  text(40, 324.6, "aprovação humana em cenários de maior risco.", "F1", 8.75);
+  text(40, 335.7, "Assistente corporativo com IA generativa para classificação, redação e revisão de comunicações, integrando automação de", "F1", 8.75);
+  text(40, 324.6, "workflows e aprovação humana em cenários de maior risco.", "F1", 8.75);
 
   text(40, 309.1, "EasyFood - API de Restaurantes", "F2", 9.8);
   text(195.85, 309.1, "| Node.js | Express | Prisma | MySQL | API REST", "F1", 8.4, COLORS.gray);
