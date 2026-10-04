@@ -40,17 +40,17 @@ function buildPdf() {
   text(166.90, 772, "Taboão da Serra - SP  |  (11) 95056-4700  |  sandrozdb@gmail.com", "F1", 8.8, COLORS.gray);
   text(165.98, 759, "sandrozdb.com  |  linkedin.com/in/sandrozdb  |  github.com/sandrozdb", "F1", 8.5, COLORS.blue);
 
-  text(40, 741, "Estudante de Engenharia da Computação e de Inteligência Artificial e Automação Digital, com foco em consultoria, dados, IA", "F1", 9.2);
-  text(40, 729.2, "aplicada, agentes de IA e automação. Experiência em infraestrutura tecnológica, redes, analytics e projetos aplicados à", "F1", 9.2);
-  text(40, 717.4, "resolução de problemas reais de negócio, combinando visão analítica, tecnologia e comunicação.", "F1", 9.2);
+  text(40, 741, "Estagiário de Consultoria na Elo e estudante de Engenharia da Computação e de Inteligência Artificial e Automação Digital, com foco", "F1", 9.2);
+  text(40, 729.2, "em IA aplicada, dados e automação. Experiência em estruturação de problemas, análise de informações e desenvolvimento de soluções", "F1", 9.2);
+  text(40, 717.4, "tecnológicas para desafios de negócio, combinando visão analítica, comunicação e capacidade de execução.", "F1", 9.2);
 
   text(40, 697.6, "EXPERIÊNCIA", "F2", 12.3, COLORS.navy);
   line(40, 692.4, W - M, 692.4);
 
   text(40, 678.9, "Elo - Estagiário de Consultoria | IA Aplicada, Agentes de IA e Dados", "F2", 10);
   text(365.11, 678.9, "| set/2026 - atual", "F1", 8.5, COLORS.gray);
-  text(40, 666.2, "Atuação na catalogação de casos de uso de IA em projetos de consultoria, testes de prompts e agentes para acelerar análises e", "F1", 9);
-  text(40, 654.8, "aplicação de IA em materiais e entregas reais do time.", "F1", 9);
+  text(40, 666.2, "Atuação em projetos de consultoria com foco em IA aplicada, dados e automação, apoiando a estruturação de problemas, análise de", "F1", 9);
+  text(40, 654.8, "informações, identificação de casos de uso de IA, experimentação de prompts e agentes e construção de materiais executivos.", "F1", 9);
 
   text(40, 639.0, "Sentran - Auxiliar de Manutenção | Infraestrutura Tecnológica, Redes e Sistemas Inteligentes", "F2", 8.9);
   text(435.69, 639.0, "| jan/2026 - ago/2026", "F1", 8.5, COLORS.gray);
@@ -88,33 +88,34 @@ function buildPdf() {
   text(40, 374.6, "MVP acadêmico para monitoramento e rastreabilidade do transporte de órgãos, com telemetria simulada, alertas, dashboard,", "F1", 8.75);
   text(40, 363.5, "otimização de rotas, API REST, 26 testes automatizados e CI.", "F1", 8.75);
 
-  text(40, 348, "EasyFood - API de Restaurantes", "F2", 9.8);
-  text(195.85, 348, "| Node.js | Express | Prisma | MySQL | API REST", "F1", 8.4, COLORS.gray);
-  text(40, 335.7, "Aplicação web para consulta e cadastro de restaurantes, com validação de dados, persistência em MySQL e evolução arquitetural", "F1", 8.75);
-  text(40, 324.6, "documentada por ADRs.", "F1", 8.75);
+  text(40, 348, "CorpAI - Assistente Corporativo Inteligente", "F2", 9.8);
+  text(250, 348, "| n8n | Gemini | IA Generativa | Automação | Human in the Loop", "F1", 8.2, COLORS.gray);
+  text(40, 335.7, "Assistente corporativo com IA generativa para classificação, redação e revisão de comunicações, integrando automação de workflows e", "F1", 8.75);
+  text(40, 324.6, "aprovação humana em cenários de maior risco.", "F1", 8.75);
 
-  text(40, 309.1, "Automação de Triagem de Notas Fiscais", "F2", 9.8);
-  text(233.43, 309.1, "| n8n | OCR | Python | Automação", "F1", 8.4, COLORS.gray);
-  text(40, 296.8, "Workflow para recebimento, leitura, aplicação de regras e direcionamento de documentos fiscais, demonstrando automação de", "F1", 8.75);
-  text(40, 285.7, "processos e integração de tecnologias.", "F1", 8.75);
+  text(40, 309.1, "EasyFood - API de Restaurantes", "F2", 9.8);
+  text(195.85, 309.1, "| Node.js | Express | Prisma | MySQL | API REST", "F1", 8.4, COLORS.gray);
+  text(40, 296.8, "Aplicação web para consulta e cadastro de restaurantes, com validação de dados, persistência em MySQL e evolução arquitetural", "F1", 8.75);
+  text(40, 285.7, "documentada por ADRs.", "F1", 8.75);
 
-  text(40, 270.2, "Vitrine de Carreira", "F2", 9.8);
-  text(129.97, 270.2, "| HTML | CSS | JavaScript | UX", "F1", 8.4, COLORS.gray);
-  text(40, 257.9, "Plataforma web gratuita de diagnóstico de perfil profissional e aderência a oportunidades, transformando análise de informações em", "F1", 8.75);
-  text(40, 246.8, "recomendações práticas de desenvolvimento.", "F1", 8.75);
+  text(40, 270.2, "Automação de Triagem de Notas Fiscais", "F2", 9.8);
+  text(233.43, 270.2, "| n8n | OCR | Python | Automação", "F1", 8.4, COLORS.gray);
+  text(40, 257.9, "Workflow para recebimento, leitura, aplicação de regras e direcionamento de documentos fiscais, demonstrando automação de", "F1", 8.75);
+  text(40, 246.8, "processos e integração de tecnologias.", "F1", 8.75);
 
   text(40, 228.3, "COMPETÊNCIAS", "F2", 12.3, COLORS.navy);
   line(40, 223.1, W - M, 223.1);
-  text(40, 209.6, "Dados & Analytics: Python, SQL, Excel, Power BI, Pandas, Pesquisa Operacional. IA & Automação: IA generativa, LLMs, Prompt", "F1", 8.65);
-  text(40, 198.7, "Engineering, Agentes de IA, n8n, OCR, APIs. Tecnologia & Consultoria: PowerPoint, MySQL, JavaScript, Git/GitHub, Linux,", "F1", 8.65);
-  text(40, 187.8, "OCI/Cloud, IoT, redes TCP/IP.", "F1", 8.65);
+  text(40, 209.6, "Consultoria & Negócios: Estruturação de problemas, análise de dados, storytelling, PowerPoint, Pesquisa Operacional.", "F1", 8.55);
+  text(40, 198.7, "Dados & Analytics: Excel, Power BI, SQL, Python, Pandas. IA & Automação: IA generativa, LLMs, Agentes de IA,", "F1", 8.55);
+  text(40, 187.8, "Prompt Engineering, Microsoft Copilot, n8n, OCR, APIs. Tecnologia: MySQL, JavaScript, Git/GitHub, Linux, OCI/Cloud,", "F1", 8.55);
+  text(40, 176.9, "IoT, redes TCP/IP.", "F1", 8.55);
 
-  text(40, 169.9, "CERTIFICAÇÕES & IDIOMAS", "F2", 12.3, COLORS.navy);
-  line(40, 164.7, W - M, 164.7);
-  text(40, 151.2, "Certificações: Oracle OCI 2026 AI Foundations Associate; Cisco Data Science Essentials with Python; Data Analytics Essentials;", "F1", 8.35);
-  text(40, 140.7, "Introduction to Modern AI; Python Essentials 1 e 2; Linux Essentials; Ethical Hacker; CCNAv7 Introduction to Networks; IBSEC Cyber", "F1", 8.35);
-  text(40, 130.2, "Security Awareness.", "F1", 8.35);
-  text(40, 117.7, "Idiomas: Português - nativo | Inglês - intermediário | Espanhol - intermediário", "F1", 8.6, COLORS.gray);
+  text(40, 158.5, "CERTIFICAÇÕES & IDIOMAS", "F2", 12.3, COLORS.navy);
+  line(40, 153.3, W - M, 153.3);
+  text(40, 139.8, "Certificações: Oracle OCI 2026 AI Foundations Associate; Cisco Data Science Essentials with Python; Data Analytics Essentials;", "F1", 8.35);
+  text(40, 129.3, "Introduction to Modern AI; Python Essentials 1 e 2; Linux Essentials; Ethical Hacker; CCNAv7 Introduction to Networks; IBSEC Cyber", "F1", 8.35);
+  text(40, 118.8, "Security Awareness.", "F1", 8.35);
+  text(40, 106.3, "Idiomas: Português - nativo | Inglês - intermediário | Espanhol - intermediário", "F1", 8.6, COLORS.gray);
 
   const stream = `${content.join("\n")}\n`;
   const objects = [
