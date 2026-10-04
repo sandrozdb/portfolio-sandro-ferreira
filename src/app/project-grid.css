@@ -1,27 +1,56 @@
-.others-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+/* Main projects: two rows of three on desktop. */
+.projects-grid.featured {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-@media (max-width: 800px) {
-  .others-grid {
-    grid-template-columns: 1fr;
-  }
+/* Secondary projects: five compact cards in one desktop row. */
+.projects-grid.others-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
 }
 
-/* Fill the final row when secondary projects have an odd count. */
-@media (min-width: 801px) {
-  .projects-grid.others-grid > :last-child:nth-child(odd) {
-    grid-column: 1 / -1;
-  }
+.others-grid .project-content {
+  padding: 16px;
+}
 
-  .others-grid > :last-child:nth-child(odd) .project-link {
-    display: grid;
+.others-grid .project-content h3 {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.others-grid .project-content p {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.others-grid .tags {
+  gap: 4px;
+}
+
+.others-grid .tags span {
+  font-size: 10px;
+  padding: 4px 6px;
+}
+
+.others-grid .text-link {
+  font-size: 12px;
+}
+
+.others-grid .status {
+  font-size: 9px;
+  padding: 4px 7px;
+}
+
+@media (max-width: 1100px) {
+  .projects-grid.featured,
+  .projects-grid.others-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
 
-  .others-grid > :last-child:nth-child(odd) .project-cover {
-    height: 100%;
-    min-height: 220px;
-    aspect-ratio: auto;
+@media (max-width: 640px) {
+  .projects-grid.featured,
+  .projects-grid.others-grid {
+    grid-template-columns: 1fr;
   }
 }
