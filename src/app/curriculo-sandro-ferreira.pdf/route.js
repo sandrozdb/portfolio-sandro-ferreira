@@ -93,10 +93,10 @@ function buildPdf() {
   text(40, 335.7, "Assistente corporativo com IA generativa para classificação, redação e revisão de comunicações, integrando automação de", "F1", 8.75);
   text(40, 324.6, "workflows e aprovação humana em cenários de maior risco.", "F1", 8.75);
 
-  text(40, 309.1, "EasyFood - API de Restaurantes", "F2", 9.8);
-  text(195.85, 309.1, "| Node.js | Express | Prisma | MySQL | API REST", "F1", 8.4, COLORS.gray);
-  text(40, 296.8, "Aplicação web para consulta e cadastro de restaurantes, com validação de dados, persistência em MySQL e evolução arquitetural", "F1", 8.75);
-  text(40, 285.7, "documentada por ADRs.", "F1", 8.75);
+  text(40, 309.1, "EasyFood - Plataforma de Restaurantes", "F2", 9.8);
+  text(225.5, 309.1, "| Node.js | Express | Prisma | MySQL | Cognito | S3", "F1", 8.1, COLORS.gray);
+  text(40, 296.8, "Plataforma mobile-first de descoberta e gestão de restaurantes, com autenticação Google via Cognito, RBAC, ownership,", "F1", 8.75);
+  text(40, 285.7, "reviews, favoritos, imagens privadas no S3, dashboards analíticos e CI.", "F1", 8.75);
 
   text(40, 270.2, "Automação de Triagem de Notas Fiscais", "F2", 9.8);
   text(233.43, 270.2, "| n8n | OCR | Python | Automação", "F1", 8.4, COLORS.gray);
