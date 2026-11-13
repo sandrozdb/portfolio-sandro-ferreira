@@ -52,11 +52,11 @@ MVP acadêmico voltado ao monitoramento e rastreabilidade do transporte de órg�
 
 **Tecnologias:** Node.js, Express, MySQL, IoT e Pesquisa Operacional.
 
-### EasyFood — API de Restaurantes
+### EasyFood — Plataforma de Restaurantes
 
-Aplicação para consulta e cadastro de restaurantes, com autenticação, autorização, persistência em banco de dados e evolução arquitetural documentada.
+Plataforma mobile-first de descoberta e gestão de restaurantes, com autenticação Google via AWS Cognito, RBAC e ownership, avaliações, favoritos, imagens privadas no S3, dashboards analíticos, auditoria e CI.
 
-**Tecnologias:** Node.js, Express, MySQL, Prisma e APIs REST.
+**Tecnologias:** Node.js, Express, Prisma, MySQL, AWS Cognito, AWS S3 e GitHub Actions.
 
 ### Automação de Triagem de Notas Fiscais
 
