@@ -3,33 +3,33 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-/* Secondary projects: five compact cards in one desktop row. */
+/* Secondary projects: six balanced cards in two desktop rows. */
 .projects-grid.others-grid {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
 }
 
 .others-grid .project-content {
-  padding: 16px;
+  padding: 21px;
 }
 
 .others-grid .project-content h3 {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.4;
 }
 
 .others-grid .project-content p {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.6;
 }
 
 .others-grid .tags {
-  gap: 4px;
+  gap: 6px;
 }
 
 .others-grid .tags span {
-  font-size: 10px;
-  padding: 4px 6px;
+  font-size: 11px;
+  padding: 5px 8px;
 }
 
 .others-grid .text-link {
