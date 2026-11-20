@@ -24,8 +24,8 @@ const processSteps = [
 
 const heroStats = [
   { number: "100k+", label: "Seguidores", icon: Users, tone: "mint" },
-  { number: "10", label: "Certificações", icon: Award, tone: "yellow" },
   { number: String(projects.length), label: "Projetos", icon: FolderKanban, tone: "blue" },
+  { number: "10", label: "Certificações", icon: Award, tone: "yellow" },
   { number: "3", label: "Formações acadêmicas", icon: GraduationCap, tone: "red" },
 ];
 
